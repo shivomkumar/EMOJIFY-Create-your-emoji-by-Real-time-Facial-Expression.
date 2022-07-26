@@ -1,0 +1,17 @@
+                                                               LIBRARIES TO BE INSTALLED
+
+
+tensorflow                         2.9.1
+tensorflow-cpu                     2.9.1
+tensorflow-estimator               2.9.0
+tensorflow-gpu                     2.9.1
+opencv-contrib-python              4.6.0.66
+opencv-python                      4.6.0.66
+keras                              2.9.0
+Keras-Preprocessing                1.1.2
+deepface                           0.0.75
+sklearn                            0.0
+seaborn                            0.11.1
+pandas                             1.2.4
+numpy                              1.20.1
+matplotlib                         3.3.4

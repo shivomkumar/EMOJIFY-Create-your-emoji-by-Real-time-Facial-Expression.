@@ -56,10 +56,10 @@ while True:
             cv2.rectangle(frame1, (x, y-50), (x+w, y+h+10), (255, 0, 0), 2)
             roi_gray_frame = gray_frame[y:y + h, x:x + w]
             cropped_img = np.expand_dims(np.expand_dims(cv2.resize(roi_gray_frame, (48, 48)), -1), 0)
-            emotion_prediction = emotion_model.predict(cropped_img)
+            emotion_prediction = emotion_model.predict()
             maxindex = int(np.argmax(emotion_prediction))
             cv2.putText(frame1, emotion_dict[maxindex], (x+20, y-60), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
-        cv2.imshow('Video', cv2.resize(frame1,(1200,860),interpolation = cv2.INTER_CUBIC))
+        cv2.imshow('', cv2.resize(frame1,(1377,768),interpolation = cv2.INTER_CUBIC))
         if cv2.waitKey(1) & 0xFF == ord('q'):
              cap1.release()
              cv2.destroyAllWindows()
